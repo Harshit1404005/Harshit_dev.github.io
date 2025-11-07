@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <div class="bg"></div> <!-- animated gradient background -->
   <header class="header">
     <div class="container">
       <h1 class="logo">Harshit Gupta</h1>
@@ -23,9 +24,8 @@
   <section class="hero" id="about">
     <div class="container">
       <h2 class="typing" id="typing"></h2>
-      <p>
-        Professional Android Developer skilled in building production-grade mobile apps with clean architecture,
-        MVVM, and Kotlin. Experienced in integrating complex features like video calls, navigation, and payment gateways.
+      <p class="subtitle">
+        Android Developer passionate about creating intuitive, performance-driven mobile apps using Kotlin, MVVM, and modern Jetpack components.
       </p>
       <div class="buttons">
         <a href="HarshitGuptaResume_1Aug2025.pdf" class="btn" download>⬇️ Download Resume</a>
@@ -37,28 +37,29 @@
   <section id="projects" class="section container">
     <h2>Projects</h2>
     <div class="grid">
+      <!-- --- list of projects --- -->
       <article class="card"><h3>ZAO Cabs & Carpool</h3><p>Cabs booking and sharing app — users can book or share rides with others.</p></article>
       <article class="card"><h3>Adyant Doctor</h3><p>App for doctors and therapists to register and accept online bookings.</p></article>
       <article class="card"><h3>Phlebo Express</h3><p>Book nearby labs for blood testing and sample collection.</p></article>
       <article class="card"><h3>Adyant Ayurveda</h3><p>Ayurvedic doctor booking and video consultation app.</p></article>
-      <article class="card"><h3>RiderConnect</h3><p>Social media app for bike riders to share rides, track routes, and connect with friends.</p></article>
-      <article class="card"><h3>Athwas</h3><p>E-commerce app for customers and delivery boys, like Flipkart or Myntra.</p></article>
-      <article class="card"><h3>Ownmates</h3><p>Social network to learn culture and language from global friends.</p></article>
-      <article class="card"><h3>HeiStn: Social & Messages</h3><p>Social messaging app for users to subscribe, chat, and share daily posts.</p></article>
-      <article class="card"><h3>Junkky</h3><p>Online scrap selling platform connecting users and scrap dealers.</p></article>
-      <article class="card"><h3>Prebook</h3><p>Salon booking app with video shorts and in-app salon content.</p></article>
-      <article class="card"><h3>HAL</h3><p>Survey app for farmers, measuring land area via Google Maps.</p></article>
-      <article class="card"><h3>Cabana</h3><p>Saudi Arabia–based service provider app (plumbing, cleaning, repair, etc.).</p></article>
-      <article class="card"><h3>Urban Assists</h3><p>Local service booking app (cleaning, plumbing, repairing).</p></article>
-      <article class="card"><h3>QR Scanner & Generator</h3><p>Simple app to scan and generate QR and barcodes.</p></article>
-      <article class="card"><h3>Electro</h3><p>Vehicle service & parts ordering app with user and admin modules.</p></article>
-      <article class="card"><h3>Lucknow Xpress & Delivery Boy</h3><p>Food delivery platform with separate delivery partner app.</p></article>
-      <article class="card"><h3>Pioneer Mall</h3><p>Online grocery shopping application.</p></article>
-      <article class="card"><h3>Uber Laundry</h3><p>Laundry booking app for UK-based users.</p></article>
-      <article class="card"><h3>Breathing & Listener</h3><p>Emotional wellness app connecting users to listeners for life conversations.</p></article>
-      <article class="card"><h3>Pure Professional</h3><p>E-learning app with video playback, subtitles, and live classes.</p></article>
-      <article class="card"><h3>Legal Yogi</h3><p>Startup service platform for legal, marketing, and business growth tools.</p></article>
-      <article class="card"><h3>Thirtymins (User, Store, Rider)</h3><p>UK-based food ordering ecosystem (3 apps) — optimized performance, fixed crashes, and improved UX.</p></article>
+      <article class="card"><h3>RiderConnect</h3><p>Social app for bikers to share rides, journeys, and track routes.</p></article>
+      <article class="card"><h3>Athwas</h3><p>E-commerce app for customers and delivery partners.</p></article>
+      <article class="card"><h3>Ownmates</h3><p>Global social platform to learn culture and language.</p></article>
+      <article class="card"><h3>HeiStn: Social & Messages</h3><p>Messaging app for posts, chat, and subscriptions.</p></article>
+      <article class="card"><h3>Junkky</h3><p>Online scrap-selling marketplace.</p></article>
+      <article class="card"><h3>Prebook</h3><p>Salon booking app with video shorts feature.</p></article>
+      <article class="card"><h3>HAL</h3><p>Farmer survey app with Google Map area measurement.</p></article>
+      <article class="card"><h3>Cabana</h3><p>Saudi-based service provider platform (plumbing, cleaning, repair).</p></article>
+      <article class="card"><h3>Urban Assists</h3><p>Home service booking app (cleaning, plumbing, etc.).</p></article>
+      <article class="card"><h3>QR Scanner & Generator</h3><p>Simple QR and barcode scanning tool.</p></article>
+      <article class="card"><h3>Electro</h3><p>Vehicle service & parts ordering application.</p></article>
+      <article class="card"><h3>Lucknow Xpress & Delivery Boy</h3><p>Food delivery platform with dual app system.</p></article>
+      <article class="card"><h3>Pioneer Mall</h3><p>Online grocery delivery application.</p></article>
+      <article class="card"><h3>Uber Laundry</h3><p>Laundry booking app for UK customers.</p></article>
+      <article class="card"><h3>Breathing & Listener</h3><p>Emotional wellness chat platform.</p></article>
+      <article class="card"><h3>Pure Professional</h3><p>E-learning platform with Exoplayer and Zoom SDK.</p></article>
+      <article class="card"><h3>Legal Yogi</h3><p>Startup support platform offering legal & business services.</p></article>
+      <article class="card"><h3>Thirtymins (User / Store / Rider)</h3><p>UK food delivery system optimized for performance and analytics.</p></article>
     </div>
   </section>
 
@@ -74,9 +75,10 @@
   <section id="skills" class="section container">
     <h2>Skills</h2>
     <div class="badges">
-      <span>Kotlin</span><span>Java</span><span>Jetpack</span><span>MVVM</span><span>Retrofit</span><span>Room DB</span>
-      <span>Coroutines</span><span>Firebase</span><span>Agora SDK</span><span>Mapbox</span><span>Google Maps</span>
-      <span>Razorpay</span><span>Zoom SDK</span><span>Banuba VE</span><span>Flutter</span>
+      <span>Kotlin</span><span>Java</span><span>Jetpack</span><span>MVVM</span><span>Retrofit</span>
+      <span>Room DB</span><span>Coroutines</span><span>Firebase</span><span>Agora SDK</span>
+      <span>Mapbox</span><span>Google Maps</span><span>Razorpay</span><span>Zoom SDK</span>
+      <span>Banuba VE</span><span>Flutter</span>
     </div>
   </section>
 

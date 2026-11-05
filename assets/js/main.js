@@ -1,5 +1,5 @@
 // Typing effect
-const text = "Hi, I'm Harshit Gupta — Android Developer";
+const text = "Hi, I'm Harshit Gupta — Android Engineer";
 let idx = 0;
 function type() {
   if (idx < text.length) {
